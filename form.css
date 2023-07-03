@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'TheJamsil5Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+    @font-face {
+    font-family: 'ONE-Mobile-Title';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Title.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+    @font-face {
+    font-family: 'Cafe24Ssurround';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+    @font-face {
+    font-family: 'SUITE-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+    @font-face {
+    font-family: 'Hahmlet-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/Hahmlet-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+bodY{
+    height: auto;
+    width: 100%;
+    position: relative;
+    top: 229px;
+    background: linear-gradient(white, #E3DABD);
+    background-image:url(../image/TBM.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+}
+.NNName{
+    color: #97122f;
+    padding: 10px;
+    margin-top: 1%;
+    margin-left: 25px;
+    font-size: 40px;
+    font-family: 'Cafe24Ssurround' !important;
+    margin-bottom: 0;
+}
+
+a{
+    color:black;
+    text-decoration: none;
+}
+a:hover, a:active{
+    color:red;
+}
+
+.one{
+    border-bottom: 1px solid black;
+    padding: 10px;
+    font-size: 17px;
+    font-family: 'SUITE-Regular' !important;
+    text-align: right;
+}

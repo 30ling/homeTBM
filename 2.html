@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UFT-8">
+    <title>TBM 회원가입</title>
+
+    <link href="form.css" rel="stylesheet" type="text/css"/>
+
+    <style>
+        @import url("../WEB/signUp.css");
+        p{
+            font-size: 18px;
+            font-family: 'SUITE-Regular' !important;
+            text-align: center;
+            margin: auto;
+            padding: 10px;
+        }
+        table{
+            margin-left: auto;
+            margin-right: auto;
+            table-layout: fixed;
+            text-align: left;
+            height: 44px;
+        }
+        .thh-th{
+            width: 100px;
+            
+        }
+        .td{
+
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div id="wrap" class="wrapper">
+        <form method="post" name="join" id="join">
+
+        
+    <div class="NNName">TBM(To Be Maker) 동아리 회원가입</div>
+    <div class="one">
+            <a href="1.html">홈페이지</a> | 
+            <a href="2.html" >회원가입</a> |
+            <a href="3.html" >로그인</a>
+    </div>
+
+    <br><br><br>
+
+    <p>TBM(To Be Maker) 동아리 부원 회원가입 페이지입니다.</p>
+
+    <main id="join_wrap" class="wrap">
+        <section>
+            <form action="join_ok.php" name = "joinform" method="POST" id="join_form" class="form" onsubmit="return sendit()">
+                <p>
+                    <input type="text" name="userid" id="user_id" placeholder="ID">
+                    <input type="button" id="check_id_btn" value="check" onclick="checkId()">
+                <p id="result">&nbsp;</p>
+                </p>
+                <p>
+                    <input type="password" name="userpw" id="user_pw" placeholder="Password">
+                </p>
+                <p>
+                    <input type="password" name="userpwcheck" id="userpw_ch" placeholder="Password check">
+                </p>
+                <p>
+                    <input type="text" name="username" id="user_name" placeholder="Name">
+                </p>
+                <p>
+                    <input type="text" name="userphone" id="user_phone" placeholder="Phone Number 000-0000-0000">
+                </p>
+                <p>
+                    <input type="text" name="ueremail" id="usere_mail" placeholder="E-mail">
+                </p>
+                주소 뺌
+                <p>
+                    <input type="submit" value="Sin up" class="form_btn">
+                </p>
+            </form>
+        </section>
+    </main>
+    <script src="./signUp.js"></script>
+</body> 
+</html>

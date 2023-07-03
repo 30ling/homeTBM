@@ -1,0 +1,78 @@
+*{ padding: 0; margin: 0; }
+li{ list-style: none; }
+
+.gallery{
+  width: 1220px; overflow: hidden; /* float를 받은 자손의 높이 인식 */
+  margin: 0 auto;
+  padding-top: 10px;
+ 
+}
+
+
+.gallery li{
+  float: left; /* 수평나열 처리 */
+  width: 400px; height: 400px;
+  margin-left: 5px;
+}
+
+
+.gallery a{
+  display: block; /* 영역을 주기 위해 요소를 변경 */
+  width: 100%; height: 100%; /* 부모 영역 상속 */
+  position: relative; /* figcaption의 앱솔루트를 기준을 현재 요소로 변경 */
+}
+
+.gallery figcaption{
+  width: 100%; height: 100%; 
+  background-color: rgba(0,0,0,0.7);
+  color: #fff; text-align: center; line-height: 400px;
+
+  position: absolute; /* 기본기준 : body */
+  left: 0; top: 0;
+
+  opacity: 0; /* 처음에 안보이게 처리 */
+  transition: 0.3s; /* css변화를 시간차 처리 */
+}
+
+
+/* 수평선 */
+.gallery figcaption:before{
+  content: ''; /* 비워둠 */
+  display: block;
+  width: calc(100% - 40px);
+  height: calc(100% - 40px);
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0; right: 0; top: 0; bottom: 0;
+  margin: auto;
+
+  transition: 0.3s;
+}
+
+/* 수직선 */
+.gallery figcaption:after{
+  content: ''; /* 비워둠 */
+  display: block;
+  width: calc(100% - 40px);
+  height: calc(100% - 40px);
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0; right: 0; top: 0; bottom: 0;
+  margin: auto;
+  transition: 0.3s;
+}
+
+.gallery a:hover figcaption, .gallery a:focus figcaption{
+  opacity: 1;
+}
+
+.gallery a:hover figcaption:before, .gallery a:focus figcaption:before{
+  height: calc(100% - 80px);
+}
+.gallery a:hover figcaption:after, .gallery a:focus figcaption:after{
+  width: calc(100% - 80px);
+}
